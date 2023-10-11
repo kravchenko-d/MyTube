@@ -1,0 +1,73 @@
+.youtube {
+  border: 1px solid black;
+  width: 1200px;
+  display: flex;
+}
+.youtube > .menu {
+  border-right: 1px solid black;
+  width: 20%;
+  box-sizing: border-box;
+}
+.youtube > .menu > .category {
+  display: flex;
+  flex-direction: column;
+}
+.youtube > .menu > .category > button {
+  display: flex;
+  height: 48px;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  border: none;
+}
+.youtube > .menu > .category > button:hover {
+  background-color: rgba(194, 194, 194, 0.4);
+  cursor: pointer;
+}
+.youtube > .menu > .category > button > .icon {
+  width: 32px;
+  font-size: 20px;
+}
+.youtube > .menu > .category > button > .name {
+  margin-left: 16px;
+  font-size: 14px;
+}
+.youtube > .menu-content {
+  width: 80%;
+  height: 100%;
+  margin: 4px;
+  display: flex;
+  box-sizing: border-box;
+}
+.youtube > .menu-content > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px;
+  box-sizing: border-box;
+}
+.youtube > .menu-content > div > .video {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: calc(50% - 32px);
+  height: auto;
+  margin: 16px;
+}
+.youtube > .menu-content > div > .video:hover {
+  cursor: pointer;
+}
+.youtube > .menu-content > div > .video > div {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.youtube > .menu-content > div > .video > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
