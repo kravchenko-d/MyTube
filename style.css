@@ -1,11 +1,9 @@
 .youtube {
-  border: 1px solid black;
-  width: 1200px;
+  width: 98vw;
   display: flex;
 }
 .youtube > .menu {
-  border-right: 1px solid black;
-  width: 20%;
+  width: 15%;
   box-sizing: border-box;
 }
 .youtube > .menu > .category {
@@ -53,21 +51,48 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: calc(50% - 32px);
+  width: calc(33.3% - 32px);
   height: auto;
   margin: 16px;
 }
 .youtube > .menu-content > div > .video:hover {
   cursor: pointer;
 }
-.youtube > .menu-content > div > .video > div {
+.youtube > .menu-content > div > .video > a {
+  text-decoration: none;
+}
+.youtube > .menu-content > div > .video > a > div {
   display: flex;
   width: 100%;
   box-sizing: border-box;
 }
-.youtube > .menu-content > div > .video > div > img {
+.youtube > .menu-content > div > .video > a > div > img {
   width: 100%;
   height: auto;
   border-radius: 12px;
   overflow: hidden;
+}
+.youtube > .menu-content > div > .video > a > .description {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", "Arial", sans-serif;
+  margin-top: 12px;
+}
+.youtube > .menu-content > div > .video > a > .description > :first-child {
+  font-weight: bolder;
+  color: #0f0f0f;
+  width: 100%;
+  margin: 8px 0;
+}
+.youtube > .menu-content > div > .video > a > .description > :nth-child(2) {
+  color: rgb(96, 96, 96);
+  margin-top: 4px;
+}
+.youtube > .menu-content > div > .video > a > .description > .metadata {
+  display: flex;
+  margin: 4px 0;
+  color: rgb(96, 96, 96);
+}
+.youtube > .menu-content > div > .video > a > .description > .metadata > :last-child {
+  margin-left: 4px;
 }/*# sourceMappingURL=style.css.map */
