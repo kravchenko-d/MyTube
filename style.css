@@ -60,11 +60,24 @@
 }
 .youtube > .menu-content > div > .video > a {
   text-decoration: none;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 .youtube > .menu-content > div > .video > a > div {
   display: flex;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+}
+.youtube > .menu-content > div > .video > a > div > span {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  padding: 2px 4px;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  font-size: 80%;
+  font-weight: bold;
 }
 .youtube > .menu-content > div > .video > a > div > img {
   width: 100%;
@@ -75,7 +88,6 @@
 .youtube > .menu-content > div > .video > a > .description {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", "Arial", sans-serif;
   margin-top: 12px;
 }
 .youtube > .menu-content > div > .video > a > .description > :first-child {

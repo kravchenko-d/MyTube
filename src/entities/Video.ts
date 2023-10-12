@@ -26,6 +26,10 @@ export default class Video {
         img.src = this.preview
         img.alt = ''
 
+        const length = document.createElement('span')
+        preview.appendChild(length)
+        length.innerText = this.length
+
         const title = document.createElement('div')
         const channel = document.createElement('div')
         const metadata = document.createElement('div')
@@ -46,8 +50,6 @@ export default class Video {
         date.innerText = this.date
 
         this.element.innerHTML=''
-        // this.element.appendChild(preview)
-        // this.element.appendChild(description)
         this.element.appendChild(a)
         a.appendChild(preview)
         a.appendChild(description)
