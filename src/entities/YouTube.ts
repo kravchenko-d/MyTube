@@ -58,6 +58,20 @@ export default class YouTube { // основной класс
         allVideos = document.createElement('div')
     }
 
+    showAll(){
+        let allVideos = document.getElementById('allvideos')
+        allVideos!.innerHTML=''
+        this.menu.mocker()
+        const video = this.menu.activeContent
+        const videos = video?.videoList ?? []
+
+        for(let video of videos){
+            video.render()
+            allVideos!.appendChild(video.element)
+        }
+        allVideos = document.createElement('div')
+    }
+
     render(){
         this.menu.render()
         this.showContent()
