@@ -241,6 +241,31 @@ export default class Menu {
             "Музыка"
         ]
 
+        const channel_icons = [
+            'https://yt3.googleusercontent.com/ytc/APkrFKaAz4oHgiH9OtItNDtWMeiHNJfzP6wWa1PmYv5j3w=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/vvEsvbve4XQz8aNgMX4qNVvKxecCM7oWoJkFwzbfM6x8Zkx_xinMjDRVG5Epu90ENYb4FvE-=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/ytc/APkrFKYu7q62VZZcVT-AD1uuMXxZiPVZyikdB5Jy7tEUo80=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/ytc/APkrFKatMKg1pj2A49ch0ZKqcMe0ojf2NGTZjGbyADyE8rs=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/8U5ZfzaN7Zr8u8edFmrT4yGpCFk12gLCA3iEYPmg8yxfz4NoIWaeumEo376GYCddCSVzb43B8Q=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/TZBmN-jEdZ_Egsko8MhKjFpHt55MYZRhSWL1Arf5vCQNyLYmGBIHTn9PdLNncVdBrZhSoo42oA=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/wk_ZmU4xaPeIsjbSaIGEIuwPEMhZlmnvoMnsZY3lE0MMgcyWdwb-3vHtS0BS21EeAxmzfBbbfg=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/gn-GY_urhg3RQlCWf1TIkCHML-5zHlJwBCTVW6yUO5BQ3O3fcnLPx2tNYiScqwKkUnsc532wpw=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/ytc/APkrFKaz5V7RziVCkDbQI7jWcBb0zFtd2_snbfiBykBI=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/23NO0V4EMJzFYwBMUXrNYC7Acu0fdIneKI_nxGlbfH2kX5uMQl2JDEeHApKXahu08GEWBj-o=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/07-zTKkKu93P17SLpTff8WfJT5SNQ4oOwgE0WE_O6WGpUZT9MXpLkdzj8LC_PzI-qz-JfS4QQQ=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/huhO59zo_1-oVVb4P1WmsKe0bM0me7Z2bhYT7qC1LR5zDbPjpXuI9XlZjOsZi-ojST2gHzVV5w=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/Bcy-yZcsFlRwmYzKpCBy5auPWOV0qzofQTb_-l7IQTTbWAgBBnv5dU-bkv8sk2QmSZEXaXKE=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/qWZ1yOSa2-AR1i0TlhGbBZNh0qPx7l_JL1CfmnSu7bGCl0rUN9Ls34N8r3HyIHVbh8oLmWtAvA=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/fH9mYnSiH2NQHEW_rczywx2_1DDLUQPk04mxeT12OFCERmXn30D857-JxNvVDN8drG5f0jDTvQ=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/28yfejVh8LlQSim-8U9KEgSTwT0QX_Ly0yJllDnxFTUd8EQ997qiQb_E6fPaJEP0bZ2MxHdEPA=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/g6HAlSvmmHS5MJ_lTcjYtFfChoeqwosf5HWkm5O8Esd8YKm31tC1sj5zNxeodIWjDIs1qw1R6Q=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/BH_iASl1ycNtPKSfOZtik3M_pXZ6MiK8c7gTLqJ8Dm99bwn3iuXAdjnWKBWbaU9putISNQ8boQ=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/ytc/APkrFKZ7clbC42s8Y2eja1GRX0wr8B-u1YrR8bVXcMME9g=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/N15hzJTcg2Qw_Ejren2ydnjY6EPZXfzYZ_dZk2LwuU00ashN4XPSYy_dxBY2Nskj5qEukQFz5A=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/zoH1gFOzPuG0aj0ZkhOmBSLoGTxr3_rA-bjHDheElDTJZlGuOp01D-kiLtWzQkJN2WVePsBWYw=s176-c-k-c0x00ffffff-no-rj',
+            'https://yt3.googleusercontent.com/x9cK_9UVwhrwl48dZfB_p1jwzbh7BeOM_2uFpDit91zibZ-B7i3Wx9EZj6ptw9xi6LexPvggWw=s176-c-k-c0x00ffffff-no-rj',
+        ]
+
         function shuffle(array: Video []) {
             let currentIndex = array.length,  randomIndex;
           
@@ -270,7 +295,8 @@ export default class Menu {
                 views[i],
                 dates[i],
                 categories[i],
-                i
+                i,
+                channel_icons[i]
             )
             videos.push(video)
             shuffle(videos)

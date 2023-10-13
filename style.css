@@ -85,26 +85,33 @@
   border-radius: 12px;
   overflow: hidden;
 }
-.youtube > .menu-content > div > .video > a > .description {
+.youtube > .menu-content > div > .video > a > .video-data > div > img {
+  width: 36px;
+  height: 36px;
+  margin-top: 20px;
+  margin-right: 12px;
+  border-radius: 20px;
+}
+.youtube > .menu-content > div > .video > a > .video-data > .description {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
 }
-.youtube > .menu-content > div > .video > a > .description > :first-child {
+.youtube > .menu-content > div > .video > a > .video-data > .description > :first-child {
   font-weight: bolder;
   color: #0f0f0f;
   width: 100%;
   margin: 8px 0;
 }
-.youtube > .menu-content > div > .video > a > .description > :nth-child(2) {
+.youtube > .menu-content > div > .video > a > .video-data > .description > :nth-child(2) {
   color: rgb(96, 96, 96);
   margin-top: 4px;
 }
-.youtube > .menu-content > div > .video > a > .description > .metadata {
+.youtube > .menu-content > div > .video > a > .video-data > .description > .metadata {
   display: flex;
   margin: 4px 0;
   color: rgb(96, 96, 96);
 }
-.youtube > .menu-content > div > .video > a > .description > .metadata > :last-child {
+.youtube > .menu-content > div > .video > a > .video-data > .description > .metadata > :last-child {
   margin-left: 4px;
 }/*# sourceMappingURL=style.css.map */

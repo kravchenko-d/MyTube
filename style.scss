@@ -1,11 +1,9 @@
 .youtube {
-    // border: 1px solid black;
     width: 98vw;
 
     display: flex;
 
     > .menu {
-        // border-right: 1px solid black;
         width: 15%;
         box-sizing: border-box;
 
@@ -44,8 +42,6 @@
         display: flex;
         box-sizing: border-box;
 
-
-        // flex-direction: row;
         > div {
             width: 100%;
             height: 100%;
@@ -92,31 +88,41 @@
                             overflow: hidden;
                         }
                     }
-                    > .description {
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 12px;
-                        > :first-child {                            
-                            font-weight: bolder;
-                            color: #0f0f0f;
-                            width: 100%;
-                            margin: 8px 0;
+                    > .video-data {
+                        > div {                            
+                            > img {
+                                width: 36px;
+                                height: 36px;
+                                margin-top: 20px;
+                                margin-right: 12px;
+                                border-radius: 20px;
+                            }                            
                         }
-                        > :nth-child(2) {
-                            color: rgb(96, 96, 96);
-                            margin-top: 4px;
-                        }
-                        > .metadata {
+                        > .description {
                             display: flex;
-                            margin: 4px 0;
-                            color: rgb(96, 96, 96);
-                            >:last-child {
-                                margin-left: 4px;
+                            flex-direction: column;
+                            margin-top: 12px;
+                            > :first-child {                            
+                                font-weight: bolder;
+                                color: #0f0f0f;
+                                width: 100%;
+                                margin: 8px 0;
+                            }
+                            > :nth-child(2) {
+                                color: rgb(96, 96, 96);
+                                margin-top: 4px;
+                            }
+                            > .metadata {
+                                display: flex;
+                                margin: 4px 0;
+                                color: rgb(96, 96, 96);
+                                >:last-child {
+                                    margin-left: 4px;
+                                }
                             }
                         }
                     }
                 }
-
             } 
         }
     }
