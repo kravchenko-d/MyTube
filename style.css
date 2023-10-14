@@ -1,3 +1,44 @@
+header {
+  display: flex;
+}
+header > .logo {
+  width: 15%;
+  max-height: 50px;
+  padding-left: 24px;
+  padding-top: 12px;
+}
+header > .logo > img {
+  width: 100%;
+  max-width: 100px;
+}
+header div {
+  text-align: center;
+  width: 85%;
+}
+header div > form > input {
+  all: unset;
+  font-family: Roboto, Noto, sans-serif;
+  text-align: left;
+  height: 32px;
+  width: 500px;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 4px 16px;
+  border: 1px solid rgb(196, 196, 196);
+}
+header div > form > button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+header div > form > button > svg {
+  position: absolute;
+  right: 65px;
+  bottom: 20px;
+}
+
 .youtube {
   width: 98vw;
   display: flex;
